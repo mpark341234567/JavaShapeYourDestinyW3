@@ -39,4 +39,24 @@ class AppTest {
     RightTriangle triangle = new RightTriangle(3, 4);
     assertEquals(12, triangle.getPerimeter(), 0.0001);
   }
+  @Test
+  void IsocelesRightTriangleAreaWorks() {
+    IsocelesRightTriangle triangle = new IsocelesRightTriangle(5);
+    assertEquals(12.5, triangle.getArea(), 0.0001);
+  }
+  @Test
+  void IsocelesRightTrianglePerimeterWorks() {
+    IsocelesRightTriangle triangle = new IsocelesRightTriangle(3);
+    assertEquals(10.242640687, triangle.getPerimeter(), 0.0001);
+  }
+  @Test
+  void SquareAreaWorks() {
+    Square square = new Square(4);
+    assertEquals(16, square.getArea(), 0.0001);
+  }
+  @Test
+  void SquarePerimeterWorks() {
+    Square square = new Square(5);
+    assertEquals(20, square.getPerimeter(), 0.0001);
+  }
 }
