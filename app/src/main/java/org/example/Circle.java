@@ -7,6 +7,10 @@ public class Circle extends Shape {
         this.radius = radius;
     }
 
+    public int numberOfSides() {
+        return 0; // A circle has no sides
+    }
+
     @Override
     public double getArea() {
         return Math.PI * radius * radius;//pi r squared

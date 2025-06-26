@@ -59,4 +59,29 @@ class AppTest {
     Square square = new Square(5);
     assertEquals(20, square.getPerimeter(), 0.0001);
   }
+  @Test
+  void CircleNumOfSidesWorks() {
+    Circle circle = new Circle(5);
+    assertEquals(0, circle.numberOfSides());
+  }
+  @Test
+  void RectangleNumOfSidesWorks() {
+    Rectangle rectangle = new Rectangle(4, 5);
+    assertEquals(4, rectangle.numberOfSides());
+  }
+  @Test
+  void SquareNumOfSidesWorks() {
+    Square square = new Square(4);
+    assertEquals(4, square.numberOfSides());
+  }
+  @Test
+  void RightTriangleNumOfSidesWorks() {
+    RightTriangle triangle = new RightTriangle(3, 4);
+    assertEquals(3, triangle.numberOfSides());
+  }
+  @Test
+  void IsocelesRightTriangleNumOfSidesWorks() {
+    IsocelesRightTriangle triangle = new IsocelesRightTriangle(5);
+    assertEquals(3, triangle.numberOfSides());
+  }
 }

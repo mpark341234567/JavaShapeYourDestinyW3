@@ -5,6 +5,9 @@ public class Square extends Rectangle{
         super(side, side); // Call Rectangle constructor with both sides equal
     }
 
+    public int numberOfSides() {
+        return super.numberOfSides(); // A square has 4 sides
+    }
     @Override
     public double getArea() {
         return super.getArea(); // Area is side^2, but Rectangle already calculates this

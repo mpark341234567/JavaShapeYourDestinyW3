@@ -9,6 +9,10 @@ public class RightTriangle extends Shape {
         this.height = height;
     }
 
+    public int numberOfSides() {
+        return 3; // A triangle has 3 sides
+    }
+
     @Override
     public double getArea() { 
         return 0.5 * base * height;//.5 x b h

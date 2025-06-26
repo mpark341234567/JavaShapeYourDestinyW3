@@ -9,6 +9,10 @@ public class Rectangle extends Shape {
         this.width = width;
     }
 
+    public int numberOfSides() {
+        return 4; // A rectangle has 4 sides
+    }
+
     @Override
     public double getArea() { // l x w
         return length * width;

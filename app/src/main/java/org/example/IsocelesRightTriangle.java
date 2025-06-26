@@ -5,6 +5,10 @@ public class IsocelesRightTriangle extends RightTriangle {
         super(side, side); // Call RightTriangle constructor with both sides equal
     }
 
+    public int numberOfSides() {
+        return super.numberOfSides(); // An isosceles right triangle has 3 sides
+    }
+
     @Override
     public double getArea() {
         return super.getArea(); // Area is 0.5 * side^2, but RightTriangle already calculates this
